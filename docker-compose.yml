@@ -1,0 +1,10 @@
+version: '2'
+services:
+  Jenkins:
+    container_name: jenkins
+    image: tigerseye/jenkins:latest 
+    ports:
+      - 8080:8080
+      - 5000:5000
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
