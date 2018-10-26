@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir jenkins-data
-# The user in container is jenkins(1000:1000). The host should create a user uid:gid=1000:1000
+# The user in container is jenkins(1000:1000)
 chown -R 1000:1000 jenkins-data
 docker-compose up -d
 while true
